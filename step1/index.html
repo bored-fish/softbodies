@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Softbody Physics Demo - Step 1</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #1a1a2e;
+        }
+        canvas {
+            display: block;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #ccc;
+            font-family: monospace;
+            font-size: 14px;
+            pointer-events: none;
+            z-index: 1;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        A particle bouncing off the walls
+        <br>
+        <button id="reset" style="margin-top: 8px; cursor: pointer; pointer-events: auto;">Reset</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="main.js"></script>
+</body>
+</html>

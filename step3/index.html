@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Softbody Physics Demo</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #1a1a2e;
+        }
+        canvas {
+            display: block;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #ccc;
+            font-family: monospace;
+            font-size: 14px;
+            pointer-events: none;
+            z-index: 1;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        Click and drag any particle
+        <br>
+        <button id="reset" style="margin-top: 8px; cursor: pointer; pointer-events: auto;">Reset</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <!-- Physics modules - separated so each can be explained independently -->
+    <script src="integration.js"></script>
+    <script src="joints.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
