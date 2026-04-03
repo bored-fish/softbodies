@@ -11,3 +11,5 @@ The key steps are organised as:
 - Step 3 : Spring Joints
 - Step 4 : Collisions
 - Step 5 : Optimisation (broad phase)
+
+Just for fun/curiosity, there's even a basic softbody test written in PHP and outputting to the commandline...
